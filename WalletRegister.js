@@ -24,6 +24,14 @@ class WalletRegister extends Contract {
         }
         return wallet;
     }
+    
+    get name() {
+        return 'WalletRegister';
+    }
+
+    get contract() {
+        return {name: this.name};
+    }
 }
 
 global.registerContract(WalletRegister);
